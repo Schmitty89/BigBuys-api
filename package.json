@@ -1,0 +1,26 @@
+{
+  "name": "api-section",
+  "version": "1.0.0",
+  "description": "big buys api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schmitty89/BigBuys-api.git"
+  },
+  "author": "Jayson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schmitty89/BigBuys-api/issues"
+  },
+  "homepage": "https://github.com/Schmitty89/BigBuys-api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2"
+  }
+}
