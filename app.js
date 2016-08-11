@@ -1,9 +1,9 @@
 const express = require('express'),
       logger = require('morgan'),
       mongoose = require('mongoose'),
-      bodyParser = require('body-parser');
-      passport = require('passport')
-
+      bodyParser = require('body-parser'),
+      passport = require('passport'),
+      cors = require('cors');
 const app = express();
 
 
@@ -21,6 +21,7 @@ db.once('open', function(){
 //my middle ware
 app.use(logger('dev'));
 app.use (bodyParser.json());
+app.use(cors());
 //app.use('passport');
 
 
