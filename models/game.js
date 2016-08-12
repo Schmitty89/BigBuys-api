@@ -4,17 +4,14 @@ const GameSchema = new mongoose.Schema({
   title: { type: String, trim: true, default : '' },
   desc: { type: String, trim: true, default : '' },
   system: { type: String, trim: true, default : '' },
-  reviews: [{
-  body: { type : String, default : '' },
-  createdAt: { type : Date, default : Date.now }
-}],
+  price: {type: Number, trim:true, default: 24.99},
+  img: {type: String, trim: true, default : 'http://vignette1.wikia.nocookie.net/foofur/images/1/1f/Image-Coming-Soon-icon.gif/revision/latest?cb=20160417205354'},
 createdAt: { type : Date, default : Date.now },
 updatedAt: Date
 });
 
 //validating
 GameSchema.path('title').required(true, 'Game must have a title!');
-GameSchema.path('desc').required(true, 'Game must have a description!');
 GameSchema.path('system').required(true, 'what platform is the game played on?');
 
 //customers can leave game reviews
